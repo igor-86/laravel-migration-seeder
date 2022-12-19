@@ -1,1 +1,22 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+    .station {
+        display: flex;
+        align-items: center;
+    }
+
+    .code {
+        border: 1px solid black;
+        padding: .4rem;
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
