@@ -16,6 +16,9 @@
                         </div>
                         <p class="ms-3 mb-0"> Partenza: {{ $item->time_start }}</p>
                         <p class="ms-3 mb-0"> Arrivo: {{ $item->time_arrive }}</p>
+                        @if ($item->cancel)
+                            <p class="ms-3 mb-0">Cancellato</p>
+                        @endif
                         <a class="btn btn-primary ms-3" href="#" role="button">More</a>
 
                     </div>
