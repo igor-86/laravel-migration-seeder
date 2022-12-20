@@ -10,7 +10,8 @@ class PageController extends Controller
 {
     public function index()
     {
-        $trains = Train::all();
+        $trains = Train::where('time_start', '>=', now())->get();
+
         /* dd($trains); */
         return view('home', compact('trains'));
     }
